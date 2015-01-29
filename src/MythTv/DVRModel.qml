@@ -9,8 +9,6 @@ import "Util.js" as Util
 //CONTENT
 //http://ubuntu:6544/Content/GetLiveStreamList
 
-
-
 ////MYTH API
 
 //     http://ubuntu:6544/Myth/GetTimeZone
@@ -95,6 +93,6 @@ XmlListModel{
         if (status === XmlListModel.Error){
 
             console.log("Error: " + errorString + "\n \n \n " + videoNfo.source.toString());
-    }
         }
+    }
 }

@@ -8,13 +8,13 @@ SortGuide::SortGuide(QObject *parent) :
 }
 void SortGuide::getModel(const QStringList &title )
 {
-QStringList data;
-data << title;
-m_model = new QStringListModel(this);
-m_model->setStringList(data);
-m_filter = new QSortFilterProxyModel(this);
-m_filter->setSourceModel(m_model);
-m_filter->setFilterCaseSensitivity(Qt::CaseInsensitive);
+    QStringList data;
+    data << title;
+    m_model = new QStringListModel(this);
+    m_model->setStringList(data);
+    m_filter = new QSortFilterProxyModel(this);
+    m_filter->setSourceModel(m_model);
+    m_filter->setFilterCaseSensitivity(Qt::CaseInsensitive);
 }
 QString SortGuide::searchPredicate() const
 {

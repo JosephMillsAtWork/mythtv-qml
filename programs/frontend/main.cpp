@@ -24,6 +24,8 @@ int main(int argc, char *argv[])
     }
     if (name != QString("localhost"))
         ip = QString("localhost \n");
+
+
     // find out IP addresses of this machine
     QList<QHostAddress> ipAddressesList = QNetworkInterface::allAddresses();
     // add non-localhost addresses
